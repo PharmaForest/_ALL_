@@ -22,41 +22,41 @@ jobs:
         run: |
           mkdir -p files
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SASPACer.git" temp
-        cp temp/SASPACer.zip files/SASPACer.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SASPACer.git" temp
+          cp temp/SASPACer.zip files/SASPACer.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sashash.git" temp
-        cp temp/sashash.zip files/sashash.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sashash.git" temp
+          cp temp/sashash.zip files/sashash.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_dataset_json.git" temp
-        cp temp/sas_dataset_json.zip files/sas_dataset_json.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_dataset_json.git" temp
+          cp temp/sas_dataset_json.zip files/sas_dataset_json.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/OncoPlotter.git" temp
-        cp temp/OncoPlotter.zip files/OncoPlotter.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/OncoPlotter.git" temp
+          cp temp/OncoPlotter.zip files/OncoPlotter.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SAS_FAKER.git" temp
-        cp temp/SAS_FAKER.zip files/SAS_FAKER.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SAS_FAKER.git" temp
+          cp temp/SAS_FAKER.zip files/SAS_FAKER.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_compare.git" temp
-        cp temp/sas_compare.zip files/sas_compare.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_compare.git" temp
+          cp temp/sas_compare.zip files/sas_compare.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/saslogchecker.git" temp
-        cp temp/saslogchecker.zip files/saslogchecker.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/saslogchecker.git" temp
+          cp temp/saslogchecker.zip files/saslogchecker.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/misc.git" temp
-        cp temp/misc.zip files/misc.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/misc.git" temp
+          cp temp/misc.zip files/misc.zip
+          rm -rf temp
 
-        git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/rtfcreator.git" temp
-        cp temp/rtfcreator.zip files/rtfcreator.zip
-        rm -rf temp
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/rtfcreator.git" temp
+          cp temp/rtfcreator.zip files/rtfcreator.zip
+          rm -rf temp
         
       - name: Commit and push
         run: |
