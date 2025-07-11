@@ -23,39 +23,39 @@ jobs:
           mkdir -p files
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SASPACer.git" temp
-          cp temp/saspacer.zip files/saspacer.zip
+          cp temp/saspacer.zip ./saspacer.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sashash.git" temp
-          cp temp/sashash.zip files/sashash.zip
+          cp temp/sashash.zip ./sashash.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_dataset_json.git" temp
-          cp temp/sas_dataset_json.zip files/sas_dataset_json.zip
+          cp temp/sas_dataset_json.zip ./sas_dataset_json.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/OncoPlotter.git" temp
-          cp temp/oncoplotter.zip files/oncoplotter.zip
+          cp temp/oncoplotter.zip ./oncoplotter.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_faker.git" temp
-          cp temp/sas_faker.zip files/SAS_FAKER.zip
+          cp temp/sas_faker.zip ./sas_faker.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_compare.git" temp
-          cp temp/sas_compare.zip files/sas_compare.zip
+          cp temp/sas_compare.zip ./sas_compare.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/saslogchecker.git" temp
-          cp temp/saslogchecker.zip files/saslogchecker.zip
+          cp temp/saslogchecker.zip ./saslogchecker.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/misc.git" temp
-          cp temp/misc.zip files/misc.zip
+          cp temp/misc.zip ./misc.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/rtfcreator.git" temp
-          cp temp/rtfcreator.zip files/rtfcreator.zip
+          cp temp/rtfcreator.zip ./rtfcreator.zip
           rm -rf temp
         
       - name: Commit and push
