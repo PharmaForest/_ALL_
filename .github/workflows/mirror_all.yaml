@@ -23,7 +23,7 @@ jobs:
           mkdir -p files
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SASPACer.git" temp
-          cp temp/SASPACer.zip files/SASPACer.zip
+          cp temp/saspacer.zip files/saspacer.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sashash.git" temp
@@ -35,11 +35,11 @@ jobs:
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/OncoPlotter.git" temp
-          cp temp/OncoPlotter.zip files/OncoPlotter.zip
+          cp temp/oncoplotter.zip files/oncoplotter.zip
           rm -rf temp
 
-          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/SAS_FAKER.git" temp
-          cp temp/SAS_FAKER.zip files/SAS_FAKER.zip
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_faker.git" temp
+          cp temp/sas_faker.zip files/SAS_FAKER.zip
           rm -rf temp
 
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/sas_compare.git" temp
