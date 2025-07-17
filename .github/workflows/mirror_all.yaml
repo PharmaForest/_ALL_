@@ -57,7 +57,11 @@ jobs:
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/rtfcreator.git" temp
           cp temp/rtfcreator.zip ./rtfcreator.zip
           rm -rf temp
-        
+
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/shutter_chance.git" temp
+          cp temp/shutter_chance.zip ./shutter_chance.zip
+          rm -rf temp
+
       - name: Commit and push
         run: |
           git add files/
