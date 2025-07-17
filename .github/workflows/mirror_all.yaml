@@ -64,6 +64,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add files/
+          git add .
           git commit -m "Scheduled update from repos" || echo "Nothing to commit"
           git push
