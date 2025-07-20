@@ -62,6 +62,10 @@ jobs:
           cp temp/shutter_chance.zip ./shutter_chance.zip
           rm -rf temp
 
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/devil.git" temp
+          cp temp/devil.zip ./devil.zip
+          rm -rf temp
+
       - name: Commit and push
         run: |
           git add .
