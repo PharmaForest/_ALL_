@@ -66,6 +66,10 @@ jobs:
           cp temp/devil.zip ./devil.zip
           rm -rf temp
 
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/xattr_kit.git" temp
+          cp temp/xattr_kit.zip ./xattr_kit.zip
+          rm -rf temp
+
       - name: Commit and push
         run: |
           git add .
