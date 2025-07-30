@@ -70,6 +70,18 @@ jobs:
           cp temp/xattr_kit.zip ./xattr_kit.zip
           rm -rf temp
 
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/cloak.git" temp
+          cp temp/cloak.zip ./cloak.zip
+          rm -rf temp
+
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/vis_review_kit.git" temp
+          cp temp/vis_review_kit.zip ./vis_review_kit.zip
+          rm -rf temp
+
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/odstable_layoutshowcase.git" temp
+          cp temp/odstable_layoutshowcase.zip ./odstable_layoutshowcase.zip
+          rm -rf temp
+
       - name: Commit and push
         run: |
           git add .
