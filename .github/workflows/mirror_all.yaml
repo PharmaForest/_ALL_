@@ -22,6 +22,10 @@ jobs:
         run: |
           mkdir -p files
 
+          git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/ctcae5_grader.git" temp
+          cp temp/ctcae5_grader.zip ./ctcae5_grader.zip
+          rm -rf temp
+
           git clone --depth 1 "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/PharmaForest/laglead.git" temp
           cp temp/laglead.zip ./laglead.zip
           rm -rf temp
